@@ -1,0 +1,90 @@
+    Question: How to access config variable in codeigniter? 
+$this->config->item('variable name');
+
+
+Question: How to unset session in codeigniter? 
+ $this->session->unsetuserdata('somename');
+
+
+Question: How do you get last insert id in codeigniter? 
+ $this->db->insertid();;
+
+
+Question: How to print SQL statement in codeigniter model?? 
+ $this->db->lastquery();
+
+ How you will use or add CodeIgniter libraries?
+
+Ans: All of the available libraries are located in your system/libraries folder. In most cases, to use one of these classes involves initializing it within a controller using the following initialization function:
+
+$this->load->library('class name');
+
+url patern http://server/controllerName/controllerFunction/param1/param2.
+
+17) What are the helpers in CodeIgniter?
+
+Ans: Helpers, as the name suggests, help you with tasks. Each helper file is simply a collection of functions in a particular category. There are URL Helpers, that assist in creating links, there are Form Helpers that help you create form elements, Text Helpers perform various text formatting routines, Cookie Helpers set and read cookies, File Helpers help you deal with files etc.
+
+Loading a helper file is quite simple using the following function:
+
+$this->load->helper('name');
+
+3- Explain Codeigniter File Structure?
+
+following are the folder structure :-
+
+application
+cache
+Config
+Controllers
+core
+errors
+helpers
+hooks
+language
+libraries
+logs
+models
+thirdparty
+views
+system
+core
+database
+fonts
+helpers
+language
+libraries
+
+autoload in codigneter
+Go to applications/config/autoload.php and in there you can edit what you need.
+
+They are in arrays and seperated by packages, libraries, helpers, config, languages and models.
+
+eg
+
+$autoload['libraries'] = array('database', 'session');
+
+$autoload['helper'] = array('url', 'html', 'form');
+
+=============================================
+ public function index() { 
+         //loading session library 
+         $this->load->library('session');
+			
+         //adding data to session 
+         $this->session->set_userdata('name','virat');
+			
+         $this->load->view('session_view'); 
+      } 
+		
+      public function unset_sesssion_data() { 
+         //loading session library
+         $this->load->library('session');
+			
+         //removing session data 
+         $this->session->unset_userdata('name'); 
+         $this->load->view('session_view'); 
+      } 
+		
+   }
+$name = $this->session->userdata('name');

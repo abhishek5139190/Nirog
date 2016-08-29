@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "font-awesome.css";
+@import "open-sans.css";
+ul, li, ol{
+	margin:0px;
+	padding:0px;
+	display:block;
+}
+a{
+	text-decoration:none;
+	color:#86c22e;
+}
+a:hover{
+	text-decoration:none;
+}
+.content{
+	margin:0px;
+	padding:30px 0px;
+}
+.content .left-sidebar ul{
+	width:100%;
+	margin:0px	
+}
+.content .left-sidebar ul li{
+	display:block;
+	font-family:"Open Sans", Arial, sans-serif;
+	font-size:14px;
+	position:relative;
+}
+.content .left-sidebar ul li a{
+	display:block;
+	padding:0px 10px;
+	line-height:25px;
+	border-bottom:solid 1px #eaeaea;
+	color:#313131;
+	height:45px;
+	line-height:45px;
+}
+.content .left-sidebar ul li a i{
+	padding-right:5px;
+}
+.content .left-sidebar ul li a:hover, .content .left-sidebar ul li a.active, .content .left-sidebar ul li a:focus{
+	color:#fff;
+	background:#86c22e;
+}
+.content .left-sidebar ul li a:hover:after, .content .left-sidebar ul li a.active:after, .content .left-sidebar ul li a:focus:after{
+	width: 0;
+    height: 0;
+    border-top: 22px inset transparent;
+    border-bottom: 22px inset transparent;
+    border-left: 22px solid #86c22e;
+    position: absolute;
+    content: "";
+    right: -7px;
+    z-index: 2;
+}
+.content .left-sidebar .img{
+	text-align:center;
+	margin-bottom:10px;
+}
+.content .left-sidebar .img a{
+	display:block;
+	color:#70c5ff;
+	margin-top:10px;
+}
+.content .left-sidebar .img a span{
+	color:red;
+}
+.main h2{
+	font-size:20px;
+	color:#d4d4d4;
+	margin-bottom:20px;
+}
+.main h2 span{
+	font-size:14px;
+	color:#86c22e;
+	float:right;
+	text-align:right
+}
+.main h2 span a{
+	color:#86c22e;
+}
+.main h2 span a:hover{
+	color:#35a6f1;
+}
+.boxs{
+	background:#F6F5F4;
+	border:solid 1px #d4d4d4;
+	padding:10px;
+}
+.Docpro{
+    margin-bottom:4%;
+}
+.box{
+	background:#F6F5F4;
+	border:solid 1px #d4d4d4;
+	padding:10px;
+        margin-bottom:3px;
+      
+}
+.box ul{
+	display:table;
+	
+}
+.box ul li{
+	display:table-cell;
+	margin:0px 10px 0px 0px;
+        
+}
+.time{
+	float:left;
+	width:auto;
+	display:inline-block;
+	max-width:45%;
+	min-width:10%;
+	text-align:center;
+	line-height:35px;
+}
+.time input{
+	width:50%;
+	border-right:none;
+	border-radius: 4px 0px 0px 4px;
+	float:left;
+}
+.time select{
+	width:50%;
+	border-radius: 0px 4px 4px 0px;
+	background:#F6F5F4;
+	padding:6px;
+}
+.disabled-box{
+	display:inline-block;
+	margin:5px 0;
+	background:#ECE9E6;
+	padding:8px 5px 8px 12px;
+	border-radius:4px;
+}
+.disabled-box span{
+	padding:5px 7px;
+	margin-left:5px;
+	border-left:solid 1px #d4d4d4;
+}
+.disabled-boxs{
+	display:inline-block;
+	margin:5px 0;
+	width:100%;
+	background:#ECE9E6;
+	padding:8px 5px 8px 12px;
+	border-radius:4px;
+}
+.disabled-boxs ul{
+	display:inline-table;
+	width:90%;
+	margin:0;
+}
+.disabled-boxs ul li{
+	display:table-cell;
+	padding:5px 0;
+}
+.disabled-boxs span{
+	padding:5px 7px;
+	margin-left:5px;
+	border-left:solid 1px #d4d4d4;
+}
+footer{
+	display:block;
+	border-top:solid 1px #eaeaea;
+	padding:10px 0;
+}
+footer a{
+	color:#bbb;
+}
+footer a:hover{
+	color:#86C22E;
+}
+footer ul{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+}
+footer ul li{
+	display:inline-block;
+	margin:0px 15px;
+	float:left;
+	padding:0px;
+}
+footer p.copyright{
+	color:#bbb;
+	font-size:12px;
+}
+footer ul.social{
+	float:right;
+	font-size:18px;
+}
+footer ul.social li{
+	margin:0 8px;
+}
+footer ul li:first-child{
+	margin-left:0;
+}
+footer ul li:last-child{
+	margin-right:0;
+}
+footer ul.social li a .fa-facebook-square{
+	color:#2A66AD;
+}
+footer ul.social li a .fa-twitter-square{
+	color:#4FD6FF;
+}
+footer ul.social li a .fa-youtube-square{
+	color:#FF1717;
+}
+header{
+	background:#fff;
+	-webkit-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.75);
+position:relative;
+}
+header .logo{
+	float:left;
+	margin:10px 0;
+}
+header .right{
+	float:right;
+	margin:10px 0;
+	line-height:50px;
+}
+header .right img{
+	margin-left:10px;
+}
+/* Code for Document page */
+
+.editText{
+	font-size:16px;
+	font-family:"Arial", sans-serif;
+	padding:0.5px;
+	
+}
+.upload1{
+	color:#86c22e;;
+	font-weight:bold;
+	font-size:14px;
+}
+.delete1{
+	color: #999999;
+}
